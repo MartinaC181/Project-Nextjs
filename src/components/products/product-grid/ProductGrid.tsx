@@ -13,7 +13,7 @@ export const ProductGrid = ( {products}: Props ) => {
                 <ProductGridItem
                  key={product.slug} 
                  product={product}
-                 />
+                />
             ))  
            }
 
