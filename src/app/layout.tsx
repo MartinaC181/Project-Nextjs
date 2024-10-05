@@ -3,6 +3,9 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { interFont }  from "@/config/fonts";
 import { TopMenu } from "@/components";
+import HomeButton from "@/components/button";
+import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -28,10 +31,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className= {interFont.className}
+        className= "bg-slate-500 text-white font-sans antialiased flex min-h-screen flex-col justify-between items-center w-full"
         > 
-        
-        { children }
+        <div className="flex flex-col items-center justify-start w-full">
+            <Navbar />
+            { children }
+        </div>
+      
+        <Footer />
       </body>
     </html>
   );
