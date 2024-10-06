@@ -1,15 +1,16 @@
 
 export interface ProductProps {
     id : number;
-    name : string;
+    title : string;
     price : number;
+    description : string;
+    image : string[];
 }
 
 export interface Product {
     id: number;
-    name: string;
+    title: string;
     description?: string;
-    images?: string[];
-    inStock?: number;
+    image?: string[];
     price: number;
 }

@@ -17,7 +17,7 @@ export default function ProductCard({
             className="w-[200px] h-[200px] p-4 rounded-xl hover:bg-gray-300 bg-white flex flex-col justify-center items-center"
             onClick={() => router.push(`/product/${product.id}`)}
             >
-            <h2 className="text-2xl text-gray-600">{product.name}</h2>
+            <h2 className="text-2xl text-gray-600">{product.title}</h2>
             <p className="text-yellow-700 text-xl">${product.price}</p>
             </div>
         ))}
