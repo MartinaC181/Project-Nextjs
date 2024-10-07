@@ -2,7 +2,7 @@
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-800 text-white text-center p-4 py-1 ">
+    <footer className="w-full bg-slate-500 text-white text-center p-4 py-1 ">
       <div className="w-[1200px] flex justify-between items-center">
         <div className="text-2xl"> logo</div>
 

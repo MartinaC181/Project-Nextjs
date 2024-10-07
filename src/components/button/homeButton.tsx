@@ -1,8 +1,5 @@
 'use client';
 
-
-// import { ButtonProps } from "@/interfaces";
-// import { useState, useCallback, memo } from "react";
 import { useRouter } from 'next/navigation';
 
 
