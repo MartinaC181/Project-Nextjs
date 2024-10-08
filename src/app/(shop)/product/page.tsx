@@ -1,4 +1,4 @@
-import DataDisplay from "@/components/products/data";
+import DataDisplay from "@/components/products/data/allProducts";
 
 
 export default function Page() {

@@ -1,7 +1,7 @@
 'use client';
 
 import useFetch from "@/hooks/useFetch";
-import { Product, ProductProps } from "@/interfaces";
+import { ProductProps } from "@/interfaces";
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
