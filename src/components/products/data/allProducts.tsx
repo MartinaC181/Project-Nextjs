@@ -5,7 +5,7 @@ import { ProductProps } from "@/interfaces";
 import { useRouter } from 'next/navigation';
 import { useState } from 'react';
 
-
+//conexion a la API para traer todos los productos
 export default function DataDisplay() {
     const { data, loading, error } = useFetch(process.env.NEXT_PUBLIC_API_PRODUCTS as string);
     const router = useRouter();
@@ -17,7 +17,7 @@ export default function DataDisplay() {
 
 
     function handleNext() {
-        if (currentIndex < data.length) {
+        if (currentIndex < data.length - 1) {
             setCurrentIndex(currentIndex + 1);
         }
     }

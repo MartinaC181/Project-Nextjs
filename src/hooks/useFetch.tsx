@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 
+
+// Hook para hacer fetch a una API
 export default function useFetch(urlApi: string) {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
